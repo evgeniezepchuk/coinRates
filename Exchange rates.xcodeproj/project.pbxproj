@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90DB69CB599454E3166941DE /* Pods_Exchange_rates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F283DEA4F52785299A1DBC00 /* Pods_Exchange_rates.framework */; };
+		F21C32132AED2DA400889D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C32122AED2DA400889D74 /* AppDelegate.swift */; };
+		F21C32152AED2DA400889D74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C32142AED2DA400889D74 /* SceneDelegate.swift */; };
+		F21C32172AED2DA400889D74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C32162AED2DA400889D74 /* ViewController.swift */; };
+		F21C321C2AED2DAD00889D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21C321B2AED2DAD00889D74 /* Assets.xcassets */; };
+		F21C321F2AED2DAD00889D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21C321D2AED2DAD00889D74 /* LaunchScreen.storyboard */; };
+		F21C322B2AED2F4A00889D74 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C322A2AED2F4A00889D74 /* APICaller.swift */; };
+		F21C322E2AED32B500889D74 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C322D2AED32B500889D74 /* Model.swift */; };
+		F21C32302AED3EFE00889D74 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C322F2AED3EFE00889D74 /* SelectionViewController.swift */; };
+		F2353BB92AF021F700DB95A4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2353BB82AF021F700DB95A4 /* DataManager.swift */; };
+		F2353BBC2AF2C3B800DB95A4 /* RatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2353BBB2AF2C3B800DB95A4 /* RatesTableViewCell.swift */; };
+		F24E23B12AF608AD00EAE9E0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F24E23B02AF608AD00EAE9E0 /* Lottie */; };
+		F24E23B32AF608D600EAE9E0 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E23B22AF608D600EAE9E0 /* ViewBuilder.swift */; };
+		F24E23B72AF6140300EAE9E0 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E23B62AF6140300EAE9E0 /* AnimationViewController.swift */; };
+		F24E23BB2AF617F300EAE9E0 /* LoadingAnimation1.json in Resources */ = {isa = PBXBuildFile; fileRef = F24E23BA2AF617F300EAE9E0 /* LoadingAnimation1.json */; };
+		F24E23BD2AF65A7400EAE9E0 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E23BC2AF65A7400EAE9E0 /* GetStartedViewController.swift */; };
+		F2DBA6AE2AEE1ECC0045E853 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBA6AD2AEE1ECC0045E853 /* Helpers.swift */; };
+		F2F99B5A2AF7580400EA9570 /* colorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F99B592AF7580400EA9570 /* colorExtension.swift */; };
+		F2F99B5C2AF75D3600EA9570 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F99B5B2AF75D3600EA9570 /* BranchViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B98A9F538C5CFEDE4922D03C /* Pods-Exchange rates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange rates.debug.xcconfig"; path = "Target Support Files/Pods-Exchange rates/Pods-Exchange rates.debug.xcconfig"; sourceTree = "<group>"; };
+		F21C320F2AED2DA400889D74 /* Exchange rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exchange rates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21C32122AED2DA400889D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F21C32142AED2DA400889D74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F21C32162AED2DA400889D74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F21C321B2AED2DAD00889D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F21C321E2AED2DAD00889D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F21C32202AED2DAD00889D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21C322A2AED2F4A00889D74 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		F21C322D2AED32B500889D74 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F21C322F2AED3EFE00889D74 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		F2353BB82AF021F700DB95A4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F2353BBB2AF2C3B800DB95A4 /* RatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesTableViewCell.swift; sourceTree = "<group>"; };
+		F24E23B22AF608D600EAE9E0 /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		F24E23B62AF6140300EAE9E0 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		F24E23BA2AF617F300EAE9E0 /* LoadingAnimation1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadingAnimation1.json; sourceTree = "<group>"; };
+		F24E23BC2AF65A7400EAE9E0 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		F283DEA4F52785299A1DBC00 /* Pods_Exchange_rates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exchange_rates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DBA6AD2AEE1ECC0045E853 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F2F99B592AF7580400EA9570 /* colorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorExtension.swift; sourceTree = "<group>"; };
+		F2F99B5B2AF75D3600EA9570 /* BranchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
+		FFF6EC7EF8AA7804F491F04C /* Pods-Exchange rates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange rates.release.xcconfig"; path = "Target Support Files/Pods-Exchange rates/Pods-Exchange rates.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F21C320C2AED2DA400889D74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24E23B12AF608AD00EAE9E0 /* Lottie in Frameworks */,
+				90DB69CB599454E3166941DE /* Pods_Exchange_rates.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E97705A3DA5B27829AF2BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F283DEA4F52785299A1DBC00 /* Pods_Exchange_rates.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830F1E07821FC4EA84D82F74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B98A9F538C5CFEDE4922D03C /* Pods-Exchange rates.debug.xcconfig */,
+				FFF6EC7EF8AA7804F491F04C /* Pods-Exchange rates.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F21C32062AED2DA400889D74 = {
+			isa = PBXGroup;
+			children = (
+				F21C32112AED2DA400889D74 /* Exchange rates */,
+				F21C32102AED2DA400889D74 /* Products */,
+				830F1E07821FC4EA84D82F74 /* Pods */,
+				63E97705A3DA5B27829AF2BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F21C32102AED2DA400889D74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F21C320F2AED2DA400889D74 /* Exchange rates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F21C32112AED2DA400889D74 /* Exchange rates */ = {
+			isa = PBXGroup;
+			children = (
+				F2F99B582AF757C200EA9570 /* Extensions */,
+				F24E23B82AF617CA00EAE9E0 /* Animation files */,
+				F2353BBA2AF2C38600DB95A4 /* ViewModels */,
+				F2DBA6AC2AEE1EBB0045E853 /* Helpers */,
+				F21C322C2AED2FCA00889D74 /* Models */,
+				F21C32272AED2EE700889D74 /* Controllers */,
+				F21C32262AED2ED100889D74 /* Network services */,
+				F21C32202AED2DAD00889D74 /* Info.plist */,
+			);
+			path = "Exchange rates";
+			sourceTree = "<group>";
+		};
+		F21C32262AED2ED100889D74 /* Network services */ = {
+			isa = PBXGroup;
+			children = (
+				F21C322A2AED2F4A00889D74 /* APICaller.swift */,
+			);
+			path = "Network services";
+			sourceTree = "<group>";
+		};
+		F21C32272AED2EE700889D74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F21C32292AED2F1800889D74 /* Core */,
+				F21C32282AED2F0C00889D74 /* General */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F21C32282AED2F0C00889D74 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F24E23BC2AF65A7400EAE9E0 /* GetStartedViewController.swift */,
+				F21C322F2AED3EFE00889D74 /* SelectionViewController.swift */,
+				F21C32162AED2DA400889D74 /* ViewController.swift */,
+				F24E23B62AF6140300EAE9E0 /* AnimationViewController.swift */,
+				F2F99B5B2AF75D3600EA9570 /* BranchViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F21C32292AED2F1800889D74 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F21C32122AED2DA400889D74 /* AppDelegate.swift */,
+				F21C32142AED2DA400889D74 /* SceneDelegate.swift */,
+				F21C321B2AED2DAD00889D74 /* Assets.xcassets */,
+				F21C321D2AED2DAD00889D74 /* LaunchScreen.storyboard */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F21C322C2AED2FCA00889D74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F21C322D2AED32B500889D74 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2353BBA2AF2C38600DB95A4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2353BBB2AF2C3B800DB95A4 /* RatesTableViewCell.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F24E23B82AF617CA00EAE9E0 /* Animation files */ = {
+			isa = PBXGroup;
+			children = (
+				F24E23BA2AF617F300EAE9E0 /* LoadingAnimation1.json */,
+			);
+			path = "Animation files";
+			sourceTree = "<group>";
+		};
+		F2DBA6AC2AEE1EBB0045E853 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBA6AD2AEE1ECC0045E853 /* Helpers.swift */,
+				F2353BB82AF021F700DB95A4 /* DataManager.swift */,
+				F24E23B22AF608D600EAE9E0 /* ViewBuilder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2F99B582AF757C200EA9570 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2F99B592AF7580400EA9570 /* colorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F21C320E2AED2DA400889D74 /* Exchange rates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21C32232AED2DAD00889D74 /* Build configuration list for PBXNativeTarget "Exchange rates" */;
+			buildPhases = (
+				A5D72BA47B39467855756D31 /* [CP] Check Pods Manifest.lock */,
+				F21C320B2AED2DA400889D74 /* Sources */,
+				F21C320C2AED2DA400889D74 /* Frameworks */,
+				F21C320D2AED2DA400889D74 /* Resources */,
+				650A9E8E671499285551288A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Exchange rates";
+			packageProductDependencies = (
+				F24E23B02AF608AD00EAE9E0 /* Lottie */,
+			);
+			productName = "Exchange rates";
+			productReference = F21C320F2AED2DA400889D74 /* Exchange rates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F21C32072AED2DA400889D74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F21C320E2AED2DA400889D74 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F21C320A2AED2DA400889D74 /* Build configuration list for PBXProject "Exchange rates" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F21C32062AED2DA400889D74;
+			packageReferences = (
+				F24E23AF2AF608AD00EAE9E0 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = F21C32102AED2DA400889D74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F21C320E2AED2DA400889D74 /* Exchange rates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F21C320D2AED2DA400889D74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21C321F2AED2DAD00889D74 /* LaunchScreen.storyboard in Resources */,
+				F24E23BB2AF617F300EAE9E0 /* LoadingAnimation1.json in Resources */,
+				F21C321C2AED2DAD00889D74 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		650A9E8E671499285551288A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exchange rates/Pods-Exchange rates-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exchange rates/Pods-Exchange rates-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Exchange rates/Pods-Exchange rates-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5D72BA47B39467855756D31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Exchange rates-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F21C320B2AED2DA400889D74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F99B5C2AF75D3600EA9570 /* BranchViewController.swift in Sources */,
+				F21C322E2AED32B500889D74 /* Model.swift in Sources */,
+				F2353BB92AF021F700DB95A4 /* DataManager.swift in Sources */,
+				F24E23B72AF6140300EAE9E0 /* AnimationViewController.swift in Sources */,
+				F24E23BD2AF65A7400EAE9E0 /* GetStartedViewController.swift in Sources */,
+				F2DBA6AE2AEE1ECC0045E853 /* Helpers.swift in Sources */,
+				F21C32302AED3EFE00889D74 /* SelectionViewController.swift in Sources */,
+				F2353BBC2AF2C3B800DB95A4 /* RatesTableViewCell.swift in Sources */,
+				F21C32172AED2DA400889D74 /* ViewController.swift in Sources */,
+				F2F99B5A2AF7580400EA9570 /* colorExtension.swift in Sources */,
+				F21C32132AED2DA400889D74 /* AppDelegate.swift in Sources */,
+				F21C32152AED2DA400889D74 /* SceneDelegate.swift in Sources */,
+				F24E23B32AF608D600EAE9E0 /* ViewBuilder.swift in Sources */,
+				F21C322B2AED2F4A00889D74 /* APICaller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F21C321D2AED2DAD00889D74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F21C321E2AED2DAD00889D74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F21C32212AED2DAD00889D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F21C32222AED2DAD00889D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F21C32242AED2DAD00889D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98A9F538C5CFEDE4922D03C /* Pods-Exchange rates.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D72SRF9P4B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Exchange rates/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "evgeni.Exchange-rates";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F21C32252AED2DAD00889D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF6EC7EF8AA7804F491F04C /* Pods-Exchange rates.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D72SRF9P4B;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Exchange rates/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "evgeni.Exchange-rates";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F21C320A2AED2DA400889D74 /* Build configuration list for PBXProject "Exchange rates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21C32212AED2DAD00889D74 /* Debug */,
+				F21C32222AED2DAD00889D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F21C32232AED2DAD00889D74 /* Build configuration list for PBXNativeTarget "Exchange rates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21C32242AED2DAD00889D74 /* Debug */,
+				F21C32252AED2DAD00889D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F24E23AF2AF608AD00EAE9E0 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F24E23B02AF608AD00EAE9E0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F24E23AF2AF608AD00EAE9E0 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F21C32072AED2DA400889D74 /* Project object */;
+}
